@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Bootstrap Demo</title>
+</head>
+<body>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Bootstrap Demo</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#jumbotron" class="nav-link">Jumbotron</a></li>
+                    <li class="nav-item"><a href="#grid" class="nav-link">Grid</a></li>
+                    <li class="nav-item"><a href="#cards" class="nav-link">Cards</a></li>
+                    <li class="nav-item"><a href="#forms" class="nav-link">Form</a></li>
+                    <li class="nav-item"><a href="#buttons" class="nav-link">Buttons</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--jumbotron-->
+    <section id="jumbotron" class="jumbotron jumbotron-fluid bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Welcome to Bootstrap</h1>
+            <p class="lead">Shows major features of Bootstrap.</p>
+        </div>
+    </section>
+
+    <!--grid system-->
+    <!--if class is container, it will contain 12 columns-->
+    <section id="grid" class="container py-5">
+        <h2>Grid System</h2>
+        <div class="row">
+            <div class="col-md-4 bg-light">column 1</div>
+            <div class="col-md-4 bg-dark">column 2</div>
+            <div class="col-md-4 bg-secondary">column 3</div>
+        </div>
+    </section>
+    
+    <!--card system-->
+    <section id="cards" class="container py-5">
+        <h2>Cards</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some example text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some example text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some example text</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--forms-->
+    <section id="forms" class="container py-5">
+        <h2>Forms</h2>
+        <form>
+            <div class="mb-3">
+                <label for="exampleemail" class="form-label">Email</label>
+                <input type="email" id="exampleemail" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="inputpassword" class="form-label">Password</label>
+                <input type="password" id="inputpassword" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="checkbox"  id="examplecheckbox" class="form-check-input">
+                <label for="examplecheckbox" class="form-check-label">Check Me</label>
+            </div>
+            <button type=""submit class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!--buttons-->
+    <section id="buttons" class="container py-5">
+        <h2>Buttons</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-dark">Dark</button>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 Company ltd. All rights reserved!</p>
+        </div>
+    </footer>
+</body>
+</html>
